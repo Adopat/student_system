@@ -8,7 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 /**
- * 公众号：知否技术
+ * Adopat
  */
 public class AdminDaoImpl implements AdminDao {
     Connection conn = null;

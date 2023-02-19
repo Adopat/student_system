@@ -14,7 +14,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Stream;
 /**
- * 公众号：知否技术
+ * Adopat
  */
 @WebFilter(filterName = "accessFilter", urlPatterns = "/*")
 public class AccessFilter implements Filter {

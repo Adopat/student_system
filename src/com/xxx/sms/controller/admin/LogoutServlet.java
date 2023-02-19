@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 /**
- * 公众号：知否技术
+ * Adopat
  */
 @WebServlet("/logout")
 public class LogoutServlet extends HttpServlet {

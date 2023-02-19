@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 /**
- * 公众号：知否技术
+ * Adopat
  */
 public class StudentDaoImpl implements StudentDao {
     Connection conn = null;

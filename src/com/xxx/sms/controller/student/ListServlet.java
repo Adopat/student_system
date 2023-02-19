@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 /**
- * 公众号：知否技术
+ * Adopat
  */
 @WebServlet("/student/list")
 public class ListServlet extends HttpServlet {

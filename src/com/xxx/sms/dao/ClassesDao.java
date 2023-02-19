@@ -4,7 +4,7 @@ import com.xxx.sms.model.Classes;
 
 import java.util.List;
 /**
- * 公众号：知否技术
+ * Adopat
  */
 public interface ClassesDao {
 

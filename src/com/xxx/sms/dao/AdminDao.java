@@ -2,7 +2,7 @@ package com.xxx.sms.dao;
 
 import com.xxx.sms.model.Admin;
 /**
- * 公众号：知否技术
+ * Adopat
  */
 public interface AdminDao {
 

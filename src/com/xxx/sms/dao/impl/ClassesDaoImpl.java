@@ -12,7 +12,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * 公众号：知否技术
+ * Adopat
  */
 public class ClassesDaoImpl implements ClassesDao {
     Connection conn = null;

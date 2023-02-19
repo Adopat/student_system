@@ -32,7 +32,7 @@
         </div>
     </div>
     <div id="footer">
-        <p> 关于知否技术 隐私权 政策 法律声明 知识产权 | © 2003-现在 zhifou.com 版权所有</p>
+        <p>  隐私权 政策 法律声明 知识产权 | © 2003-现在 zhifou.com 版权所有</p>
     </div>
 </div>
 <script>

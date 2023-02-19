@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 /**
- * 公众号：知否技术
+ * Adopat
  */
 @WebServlet("/student/delete")
 public class DeleteServlet extends HttpServlet {

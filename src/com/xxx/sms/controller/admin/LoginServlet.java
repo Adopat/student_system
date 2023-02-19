@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * 公众号：知否技术
+ * Adopat
  */
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
