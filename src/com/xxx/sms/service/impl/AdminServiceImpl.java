@@ -13,4 +13,9 @@ public class AdminServiceImpl implements AdminService {
     public Admin login(String username, String password) {
         return adminDao.login(username, password);
     }
+
+    @Override
+    public Admin register(String username, String password) {
+        return adminDao.register(username, password);
+    }
 }
