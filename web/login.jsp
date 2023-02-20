@@ -24,17 +24,27 @@
                 </div>
                 <div class="form">
                     <img src="${path}/static/image/password.png" alt="密码">
-                    <input type="password" name="password" maxlength="6" placeholder="请输入密码"></div>
+                    <input type="password" name="password" maxlength="20" placeholder="请输入密码"></div>
                 <input type="submit" value="登录">
+
+
             </form>
+<%--            <br>--%>
+            <div id="register">
+                <a  href="${pageContext.request.contextPath}/register.jsp">还没账号注册一个</a>
+            </div>
+
             <%--登录失败提示信息--%>
             <p id="error" style="color: red;text-align: center">${error}</p>
         </div>
+
+
     </div>
     <div id="footer">
         <p>  隐私权 政策 法律声明 知识产权 | © 2003-现在 zhifou.com 版权所有</p>
     </div>
 </div>
+
 <script>
     $(function () {
         // 监听input输入框，清除 error 信息
