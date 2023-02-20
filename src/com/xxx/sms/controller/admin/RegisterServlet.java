@@ -1,9 +1,14 @@
 package com.xxx.sms.controller.admin;
 
+/**
+ * @author Adopat
+ * @description: TODO
+ * @date 2023/02/20 10:21
+ **/
+
 import com.xxx.sms.model.Admin;
 import com.xxx.sms.service.AdminService;
 import com.xxx.sms.service.impl.AdminServiceImpl;
-import sun.security.provider.MD5;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,8 +21,8 @@ import java.io.IOException;
 /**
  * Adopat
  */
-@WebServlet("/login")
-public class LoginServlet extends HttpServlet {
+@WebServlet("/register")
+public class RegisterServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -27,7 +32,7 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
         AdminService adminService = new AdminServiceImpl();
         // 3. 调用 service 层的登录方法，根据账号和密码获取管理员信息
-        Admin admin = adminService.login(username, password);
+        Admin admin = adminService.register(username, password);
         // 4. 如果管理员存在
         if (null != admin) {
             HttpSession session = request.getSession();
@@ -37,10 +42,7 @@ public class LoginServlet extends HttpServlet {
 //            System.out.println("getContextPath "+request.getContextPath());
 
 //            String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path;
-            response.sendRedirect(request.getContextPath()+"/student/list");
-        } else {
-            // 7. 如果不存在，就将错误信息放到 request 域里面，然后请求转发到登录页面
-            request.setAttribute("error","账号或者密码错误!");
+            // 注册成功请求转发到登录页面
             request.getRequestDispatcher("/login.jsp").forward(request,response);
         }
     }
