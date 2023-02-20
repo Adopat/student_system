@@ -28,7 +28,7 @@ public class AccessFilter implements Filter {
         String url = request.getRequestURI();
         // 2. 因为 web.xml 里面我们默认配置的欢迎页面是登录页面，而项目进入登录页面的url的末尾是 /sms/
         // 所以这里要排除掉登录、退出、以及静态资源
-        if (url.endsWith("/sms/") || url.contains("/login") || url.contains("/logout") || url.contains("/static/")) {
+        if (url.endsWith("/sms/") || url.contains("/login") || url.contains("/logout") || url.contains("/static/")||url.contains("/register")) {
             // 3. 放行
             filterChain.doFilter(request, response);
         } else {
