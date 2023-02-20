@@ -13,4 +13,12 @@ public interface AdminDao {
      * @return
      */
     Admin login(String username, String password);
+
+    /**
+     * 注册用户
+     * @param username
+     * @param password
+     * @return
+     */
+    Admin register(String username, String password);
 }
