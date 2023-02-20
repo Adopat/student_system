@@ -51,6 +51,16 @@ input[type=submit] {
     font-weight: bold;
     margin: 10px 25px 5px;
 }
+#register{
+    width:200px;
+    height:28px;
+    background: #5b51e8;
+    font-size: 15px;
+    color:white;
+    border-radius: 3px;
+    font-weight: bold;
+    margin: 10px 25px 5px;
+}
 #footer{
     height:20%;
     padding:30px;
