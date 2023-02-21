@@ -22,8 +22,8 @@
         <!-- 菜单 -->
         <div id="menu">
             <ul class="nav nav-pills nav-stacked">
-                <li class="actives"><a href="#">学生管理</a></li>
-                <%--<li><a href="#">班级管理</a></li>--%>
+                <li class="actives"><a href="${path}/student/list">学生管理</a></li>
+                <li class="actives"><a href="${path}/classes/list">班级管理</a></li>
             </ul>
         </div>
     </div>
